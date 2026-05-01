@@ -39,7 +39,10 @@ Confirmatory analyses are defined by OSF pre-registration.
 ## Operating rules
  
 See docs/DOCUMENT_C_Execution_Rules.docx
- 
+## Pre-registration
+
+OSF Registration:
+https://osf.io/yhxt4/overview   May 1 2026 7:28pm EDT 
 ## Citation
  
 Citation guidance will be added upon publication.
