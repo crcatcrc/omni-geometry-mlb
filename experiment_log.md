@@ -122,3 +122,26 @@ All diagnostics passed; no further iteration required.
 
 **Status:**
 Locked
+### [2026-XX-XX] — OSF Pre-registration Submitted
+
+**Type:** Lock
+
+**Context:**
+Completion of preregistration prior to confirmatory batch execution.
+
+**Decision:**
+OSF registration submitted and locked.
+
+**Rationale:**
+Required to enforce confirmatory analysis integrity.
+
+**Implications:**
+- Forward batch may begin
+- No adaptive changes allowed
+- Deviations require formal amendment
+
+**Related Artifacts:**
+- OSF: https://osf.io/yhxt4/overview
+
+**Status:**
+Locked
