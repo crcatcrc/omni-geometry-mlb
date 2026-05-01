@@ -145,3 +145,28 @@ Required to enforce confirmatory analysis integrity.
 
 **Status:**
 Locked
+### [2026-05-01] — Adopt Hybrid Batch Execution Protocol
+
+**Type:** Decision
+
+**Context:**
+Post-OSF execution planning for confirmatory forward batch.
+
+**Decision:**
+Forward batch will begin in safe mode for Asc-1, Asc-2, and Asc-3. Each of these chunks will be run and inspected individually before proceeding. After successful completion of the first three same-coordinate Asc chunks, execution may proceed in efficient controlled mode, with continued adherence to locked feature lists, snapshot requirements, dedupe behavior, and no adaptive changes.
+
+**Rationale:**
+The first three Asc chunks are same-coordinate and most directly comparable to already-locked Asc × MO exploratory results. Running these individually provides an early integrity check before accelerating batch execution.
+
+**Implications:**
+- Asc-1, Asc-2, and Asc-3 are treated as guarded launch chunks.
+- No scope, threshold, feature, or engine changes are permitted.
+- Later chunks may be executed more efficiently once early behavior is verified.
+
+**Related Artifacts:**
+- OSF: https://osf.io/yhxt4/overview
+- Documents: Document C v1.1; Document B v4
+- Files: cell_v2_batch_v2_0_2_stepB_revF.py
+
+**Status:**
+Active
