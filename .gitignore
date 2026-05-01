@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Large data
+*.csv.large
+inputs/
+data_raw/
+
+# Workspace (never commit)
+workspace/
+archives/
+
+# Environment
+.env
+.venv/
+venv/
