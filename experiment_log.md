@@ -167,6 +167,29 @@ The first three Asc chunks are same-coordinate and most directly comparable to a
 - OSF: https://osf.io/yhxt4/overview
 - Documents: Document C v1.1; Document B v4
 - Files: cell_v2_batch_v2_0_2_stepB_revF.py
+- ### [2026-05-01] — Note Interpretive Caveats for PF and Inner-Planet Features
+
+**Type:** Issue
+
+**Context:**
+Before launching Asc-1, two structural considerations were identified: PFff/PFdn are calculated points whose formulas reference the Ascendant, and SU/ME/VE geocentric G-LON/G-RA features may exhibit constrained apparent motion.
+
+**Decision:**
+No scope change will be made. PFff, PFdn, SU, ME, and VE remain in the pre-registered feature space and will be executed as specified.
+
+**Rationale:**
+The OSF pre-registration and PROJECT_SCOPE define the full feature space. Removing or altering these features after registration would constitute an adaptive scope change. Asc × PF features measure the geometric separation between two non-identical but partially co-defined points, while constrained-motion features are handled by the engine’s existing support rules.
+
+**Implications:**
+These features will be retained in execution but interpreted cautiously in later reporting. Any mathematical dependence, partial co-definition, constrained-motion behavior, insufficient-support outcome, or “no lock” result will be reported as diagnostic information rather than used as a basis for exclusion.
+
+**Related Artifacts:**
+- OSF: https://osf.io/yhxt4/overview
+- Documents: PROJECT_SCOPE.md; OMNI Naming Conventions Reference v2
+- Files: cell_v2_batch_v2_0_2_stepB_revF.py
+
+**Status:**
+Active
 
 **Status:**
 Active
