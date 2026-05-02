@@ -193,3 +193,39 @@ Active
 
 **Status:**
 Active
+
+### [2026-05-02] — Apply H1 Support-Floor Interpretation Rule
+
+**Type:** Decision
+
+**Context:**
+Asc-1 produced several rows with `lock_succeeded = True` but `peak_smoothed_count < 30`, especially among SU, ME, VE, NE, and PL features.
+
+**Decision:**
+For confirmatory H1 evaluation, a target-evaluation counts as supported only if all three conditions are met:
+
+1. `lock_succeeded = True`
+2. `peak_smoothed_lift > 1.15`
+3. `peak_smoothed_count >= 30`
+
+Rows failing the support floor are retained in the registry but classified as unsupported for H1.
+
+**Rationale:**
+The OSF pre-registration requires peak smoothed lift above threshold with sufficient support. The engine’s `lock_succeeded` flag records successful lock computation, but H1 support requires the additional count floor.
+
+Low-count cases may arise from constrained apparent motion, sparse sample coverage over the 25-year window, or other distributional limits. These are diagnostic outcomes, not grounds for changing scope.
+
+**Implications:**
+- Asc-1 remains valid.
+- Low-count rows remain reported.
+- Unsupported rows contribute to the H1 denominator but not the numerator.
+- This rule applies uniformly to all 54 chunks.
+- No engine modification is made.
+
+**Related Artifacts:**
+- OSF: https://osf.io/yhxt4/overview
+- Documents: PROJECT_SCOPE.docx; Document B v4; Document C v1.1
+- Files: omni_feature_registry.csv; cell_v2_batch_v2_0_2_stepB_revF.py
+
+**Status:**
+Active
