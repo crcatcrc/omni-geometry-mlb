@@ -262,3 +262,25 @@ The missing columns reflect the contents of the locked aspect feature file used 
 
 **Status:**
 Active
+
+### [2026-05-03] — Asc-6 Dedupe Spike and G-AZ Degenerate Peaks
+
+**Type:** Observation
+
+**Context:**
+Asc-6 (G-LON → G-AZ) produced an elevated pre-dedupe row count (174 → 240) with post-dedupe resolution to 206 (net +32).
+
+**Observation:**
+- The inflated pre-dedupe count indicates duplicate inserts within the run; post-run dedupe collapsed to the expected canonical set.
+- G-AZ High-target peaks for UR/NE/PL showed identical capped lift values (~11.25) with count ≈ 1.
+
+**Decision:**
+- Treat the dedupe spike as a benign within-run duplication artifact; no rerun.
+- Classify G-AZ High-target outer-planet peaks as degenerate (single-event) and exclude via the H1 support floor.
+
+**Rationale:**
+Post-dedupe registry state is authoritative. Identical capped lifts with count ≈ 1 across multiple bodies indicate projection/smoothing artifacts, not stable signal.
+
+**Implications:**
+- H1 counts unaffected (supported 25/34).
+- No changes to engine or feature definitions during confirmatory phase.
