@@ -229,3 +229,36 @@ Low-count cases may arise from constrained apparent motion, sparse sample covera
 
 **Status:**
 Active
+### [2026-05-02] — Missing PF G-AZ Features in Asc-3
+
+**Type:** Issue
+
+**Context:**
+Asc-3 (G-AZ same-coordinate) execution skipped two requested features:
+- Asc x PFff G-AZ
+- Asc x PFdn G-AZ
+
+The engine reported both columns as missing from the G-AZ aspect feature file.
+
+**Decision:**
+These features are recorded as unavailable in the current G-AZ aspect dataset. No rerun, reconstruction, substitution, or scope change will be performed.
+
+**Rationale:**
+The missing columns reflect the contents of the locked aspect feature file used for execution. This is treated strictly as a data-availability constraint. Post-registration feature reconstruction or reinterpretation is not permitted during confirmatory execution. The absence of these columns is not interpreted as a theoretical impossibility, and no scope reduction is applied.
+
+**Implications:**
+- Asc-3 produced 15 successful features / 30 target-evaluations.
+- PFff/PFdn G-AZ evaluations are unavailable for Asc-3 reporting.
+- These evaluations are excluded from H1 numerator calculations.
+- Final denominator treatment will be applied uniformly across all chunks after full execution is complete.
+- Wherever PF G-AZ or other unavailable columns occur in subsequent chunks, the same treatment applies: skip silently, log the omission, and do not rerun.
+- No engine code, feature definitions, or data-generation steps are modified.
+
+**Related Artifacts:**
+- OSF: https://osf.io/yhxt4/overview
+- Run: Asc-3 G-AZ same-coordinate batch
+- File: MLB 2000-no02-2024 G-AZ to G-AZ aspect features.csv
+- Output: omni_feature_registry.csv
+
+**Status:**
+Active
