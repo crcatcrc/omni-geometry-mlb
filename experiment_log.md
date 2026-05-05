@@ -293,6 +293,16 @@ The pre-registered scope (OSF: https://osf.io/yhxt4/overview; Document B v4 Sect
   = 95 origin-target pairs × 9 constructions × 2 outcomes
   = 1,710 target-evaluations.
 
+  ### [2026-05-04] — Forward-Batch Domain Restrictions and Measurement-System Characterization (Pre-MC Batch)
+
+**Type:** Issue (preemptive, prior to MC batch execution)
+
+**Context:**
+The pre-registered scope (OSF: https://osf.io/yhxt4/overview; Document B v4 Section 7.8) defines 1,710 target-evaluations across:
+  (4 angles × 17 bodies) + (MO × 14 bodies) + (ME × 13 bodies)
+  = 95 origin-target pairs × 9 constructions × 2 outcomes
+  = 1,710 target-evaluations.
+
 Three structural properties of the data have been identified that affect the testable confirmatory scope. All three are identified prior to MC batch execution and consolidated into this single preemptive Issue entry. None of these properties was created during Phase 1; each reflects either a geometric definition of an angle origin, a Swiss Ephemeris pipeline scope decision predating Phase 1, or an empirical sampling characteristic of the locked dataset.
 
 This entry replaces and extends the 2026-05-02 PoF G-AZ entry (which is preserved for archival traceability but superseded by this consolidated treatment).
