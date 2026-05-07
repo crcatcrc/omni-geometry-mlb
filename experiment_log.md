@@ -285,15 +285,10 @@ Post-dedupe registry state is authoritative. Identical capped lifts with count �
 - H1 counts unaffected (supported 25/34).
 - No changes to engine or feature definitions during confirmatory phase.
 
-- *Type:** Issue (preemptive, prior to MC batch execution)
+---
 
-**Context:**
-The pre-registered scope (OSF: https://osf.io/yhxt4/overview; Document B v4 Section 7.8) defines 1,710 target-evaluations across:
-  (4 angles × 17 bodies) + (MO × 14 bodies) + (ME × 13 bodies)
-  = 95 origin-target pairs × 9 constructions × 2 outcomes
-  = 1,710 target-evaluations.
 
-  ### [2026-05-04] — Forward-Batch Domain Restrictions and Measurement-System Characterization (Pre-MC Batch)
+### [2026-05-04] — Forward-Batch Domain Restrictions and Measurement-System Characterization (Pre-MC Batch)
 
 **Type:** Issue (preemptive, prior to MC batch execution)
 
