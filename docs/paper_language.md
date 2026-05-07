@@ -101,3 +101,46 @@ lift (≈1.3-1.8), adequate support (counts ≥ 30), and persistence across
 coordinate systems and transformation directions.
 
 
+---
+
+## Sampling-Geometry Principle (Locked)
+
+Angular-separation features are defined over a circular domain (0–360°) computed as modular differences between two coordinates. The domain of angular separation is therefore not constrained by the domain of either contributing coordinate individually.
+
+When one coordinate occupies a bounded domain (e.g., angle-origin G-AZ restricted to a local azimuthal arc) and the paired coordinate spans the full circular domain through aggregate sampling (e.g., target-body G-AZ under Earth's daily rotation), the resulting separation values populate the full 0–360° domain. The bounded coordinate functions as a moving reference frame rather than a limiting domain.
+
+This principle justifies the use of bounded-origin coordinate systems (e.g., Asc G-AZ, EA G-AZ) in angular feature construction and distinguishes coordinate-domain coverage from separation-domain coverage.
+
+---
+
+## Two-Regime Signal Architecture (Locked)
+
+Angular feature constructions in this study partition into two structurally distinct signal regimes based on coordinate sampling geometry:
+
+**Global Regime**
+
+Constructions in which both origin and target coordinates span the full 0–360° domain (e.g., G-LON, G-RA, and G-AZ as target under aggregate sampling). Observations are distributed across the full circular domain, and effect sizes reflect global structure in angular-separation space.
+
+**Local (Concentration) Regime**
+
+Constructions in which one coordinate (typically the origin) occupies a bounded domain (e.g., Asc G-AZ or EA G-AZ), while the paired coordinate spans the full domain. Observations are concentrated within a restricted sector defined by the bounded coordinate, producing localized contrast in angular-separation distributions.
+
+These regimes are properties of the measurement system rather than of the underlying celestial relationships. Comparisons of effect size across regimes must account for differences in sampling geometry.
+
+---
+
+## Concentration-Regime Caveat (Locked)
+
+Elevated lift values observed in concentration-regime constructions (e.g., G-AZ-origin pairings) arise from the concentration of observations within a bounded sampling domain, which increases contrast in angular-separation distributions relative to a global baseline.
+
+This amplification reflects measurement geometry rather than necessarily stronger underlying relationships. However, the presence of statistically supported signal (i.e., satisfying pre-registered support criteria) remains valid.
+
+Accordingly:
+- High lift combined with low sample support is treated as unstable (degenerate or sparse).
+- High lift combined with adequate support is interpreted as a valid signal expressed under concentration.
+- Cross-regime comparisons of lift magnitude (concentration vs global constructions) are descriptive only.
+
+Comparable effect-size estimation across regimes is reserved for Phase 2 modeling using coverage-aware methods.
+
+
+
