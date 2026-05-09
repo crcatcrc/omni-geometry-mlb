@@ -405,3 +405,4 @@ PoF G-AZ position values exist in the base positions file and may be revisited i
 
 **Status:** Active
 
+MC batch complete and locked, panel-wide 158/204 = 77.5%, six chunks executed, summary cross-reviewed and locked.
