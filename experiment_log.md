@@ -406,3 +406,5 @@ PoF G-AZ position values exist in the base positions file and may be revisited i
 **Status:** Active
 
 MC batch complete and locked, panel-wide 158/204 = 77.5%, six chunks executed, summary cross-reviewed and locked.
+
+2026-05-09 — VX batch complete and locked. Six chunks executed under engine v2.0.2: VX-1 (G-LON same), VX-2 (G-RA same), VX-4 (G-LON × G-RA), VX-5 (G-RA × G-LON), VX-6 (G-LON × G-AZ), VX-8 (G-RA × G-AZ). Chunks 3/7/9 excluded by Filter M1 (VX G-AZ origin). Panel-wide H1 support 163/204 = 79.9% — highest among completed Phase 1 origin batches. Coverage-clean detection robustness 132/132 with Tier A 7-block 72/72 = 100% anchor (strongest temporal-validation outcome in Phase 1 to date). Two new structural findings: (1) coverage-interaction efficiency on sparse outer planets in the global regime — 24/24 outer-planet support across global-regime VX chunks; (2) distinct stability topology vs MC — VX produces binary stabilize-or-collapse on sparse outers (27 anchor / 0 persistent / 9 fragile), MC produces graduated persistence (12 / 16 / 8). VX Batch Summary v1.1-final cross-reviewed with ChatG and locked. Cleared to begin EA batch.
