@@ -1,0 +1,14 @@
+OMNI Geometry MLB
+Copyright © 2026 Courtney Roberts Conrad
+
+This repository forms part of the OMNI Geometry research program, an independent investigation of cross-frame angular structure analysis in time-stamped event datasets.
+
+This repository specifically constitutes the deposited reproducibility snapshot for the manuscript currently submitted to Royal Society Open Science (release tag v1.0-rsos-submission). It is not the entirety of the OMNI Geometry methodology, framework, or research program.
+
+Users of this repository or any derivative works should cite the associated publication once available, and acknowledge the original OMNI Geometry framework.
+
+Recommended citation until publication:
+
+  Conrad, C. R. (2026). OMNI Geometry MLB (Version v1.0-rsos-submission)
+  [Software and research artifacts]. GitHub.
+  https://github.com/crcatcrc/omni-geometry-mlb/releases/tag/v1.0-rsos-submission
