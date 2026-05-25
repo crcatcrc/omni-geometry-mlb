@@ -59,7 +59,20 @@ GHL_THRESHOLD = -5
 print("Loading cross-system metadata...")
 needed_cols = ["Date", "Home Team Score", "Away Team Score", "Total Runs Scored"]
 master = pd.read_csv(CROSS_SYSTEM_SOURCE, usecols=needed_cols)
-master["Date"] = pd.to_datetime(master["Date"], format="%d-%b-%y", errors="raise")
+
+# Mixed date formats in the source file: predominantly "29-Mar-00" (d-MMM-yy)
+# with a subset in "May 19 2021" (MMM d yyyy) form. Parse primary format,
+# fall back for the rest, fail loudly if any remain unparseable.
+dates = pd.to_datetime(master["Date"], format="%d-%b-%y", errors="coerce")
+mask = dates.isna()
+if mask.any():
+    print(f"Note: {mask.sum():,} dates not in %d-%b-%y form; using fallback parser.")
+    alt = pd.to_datetime(master.loc[mask, "Date"], errors="coerce")
+    dates.loc[mask] = alt
+if dates.isna().any():
+    bad = master.loc[dates.isna(), "Date"].head(10).tolist()
+    raise ValueError(f"Unparseable dates remain (first 10): {bad}")
+master["Date"] = dates
 print(f"Loaded: {len(master):,} games")
 
 assert len(master) == 57635, (
