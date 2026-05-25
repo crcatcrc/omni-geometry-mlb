@@ -59,20 +59,22 @@ GHL_THRESHOLD = -5
 print("Loading cross-system metadata...")
 needed_cols = ["Date", "Home Team Score", "Away Team Score", "Total Runs Scored"]
 master = pd.read_csv(CROSS_SYSTEM_SOURCE, usecols=needed_cols)
+# Engine-protocol date parsing (cell_v2_batch_v2_0_2_clean.py: load_feature).
+# format="mixed" handles all three observed source-file date formats in one pass;
+# falls back to no-format parsing on older pandas. errors="coerce" routes any
+# remaining unparseable cells to NaT, caught by the hard-fail check that follows.
+try:
+    master["Date"] = pd.to_datetime(master["Date"], errors="coerce", format="mixed")
+except (TypeError, ValueError):
+    master["Date"] = pd.to_datetime(master["Date"], errors="coerce")
 
-# Mixed date formats in the source file: predominantly "29-Mar-00" (d-MMM-yy)
-# with a subset in "May 19 2021" (MMM d yyyy) form. Parse primary format,
-# fall back for the rest, fail loudly if any remain unparseable.
-dates = pd.to_datetime(master["Date"], format="%d-%b-%y", errors="coerce")
-mask = dates.isna()
-if mask.any():
-    print(f"Note: {mask.sum():,} dates not in %d-%b-%y form; using fallback parser.")
-    alt = pd.to_datetime(master.loc[mask, "Date"], errors="coerce")
-    dates.loc[mask] = alt
-if dates.isna().any():
-    bad = master.loc[dates.isna(), "Date"].head(10).tolist()
-    raise ValueError(f"Unparseable dates remain (first 10): {bad}")
-master["Date"] = dates
+if master["Date"].isna().any():
+    n_bad = int(master["Date"].isna().sum())
+    bad = master.loc[master["Date"].isna(), "Date"].head(10).tolist()
+    raise ValueError(
+        f"Engine-protocol date parsing failed for {n_bad} rows. "
+        f"Samples (first 10): {bad}"
+    )
 print(f"Loaded: {len(master):,} games")
 
 assert len(master) == 57635, (
