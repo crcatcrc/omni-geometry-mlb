@@ -26,8 +26,7 @@ MANIFEST_PATH = SANDBOX_ROOT / "holdout_manifest_v1_0.csv"
 
 # Canonical date-bearing Paper 1 per-event artifact. Any per-event file with
 # the full 57,635-event date column gives an identical manifest.
-EVENT_SOURCE = Path("/content/drive/MyDrive/OMNI_PROJECT/workspace/Asc_x_MO_GLON.csv")
-
+EVENT_SOURCE = Path("/content/drive/MyDrive/OMNI_PROJECT/workspace/per_event_features/Asc_x_MO_G-LON.csv")
 # --- Sanity ------------------------------------------------------------------
 SANDBOX_ROOT.mkdir(parents=True, exist_ok=True)
 GATE_DIR.mkdir(parents=True, exist_ok=True)
