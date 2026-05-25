@@ -1,0 +1,79 @@
+"""
+OMNI Paper 2 Sandbox — hold-out partition generation.
+
+Procedure committed to GitHub BEFORE the partition manifest is generated.
+This is the auditable record of (a) the literal seed value, (b) the partition
+algorithm, and (c) the event-source path used to derive unique game-dates.
+
+Run ONCE in Colab. The output is `holdout_manifest_v1_0.csv` stored in
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/. The SHA256 of the
+manifest is committed to GitHub as a follow-up file after generation.
+
+Charter §3 (Hold-out partition specification) is the authoritative reference.
+"""
+
+from pathlib import Path
+import hashlib
+import numpy as np
+import pandas as pd
+
+# --- Constants (locked by Charter §3) ---------------------------------------
+OMNI_P2_SEED = 20260524
+EXPLORATORY_FRAC = 0.80
+SANDBOX_ROOT = Path("/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox")
+GATE_DIR = SANDBOX_ROOT / "CONFIRMATORY_GATE"
+MANIFEST_PATH = SANDBOX_ROOT / "holdout_manifest_v1_0.csv"
+
+# Canonical date-bearing Paper 1 per-event artifact. Any per-event file with
+# the full 57,635-event date column gives an identical manifest.
+EVENT_SOURCE = Path("/content/drive/MyDrive/OMNI_PROJECT/workspace/Asc_x_MO_GLON.csv")
+
+# --- Sanity ------------------------------------------------------------------
+SANDBOX_ROOT.mkdir(parents=True, exist_ok=True)
+GATE_DIR.mkdir(parents=True, exist_ok=True)
+assert EVENT_SOURCE.exists(), f"Event source not found: {EVENT_SOURCE}"
+assert not MANIFEST_PATH.exists(), (
+    f"Manifest already exists at {MANIFEST_PATH}. "
+    "Partition generation is one-shot; do not regenerate."
+)
+
+# --- Extract unique game-dates -----------------------------------------------
+events = pd.read_csv(EVENT_SOURCE, usecols=["date"])
+events["date"] = pd.to_datetime(events["date"]).dt.strftime("%Y-%m-%d")
+unique_dates = np.sort(events["date"].unique())
+n_dates = len(unique_dates)
+print(f"Unique game-dates in event base: {n_dates}")
+
+# --- Partition ---------------------------------------------------------------
+rng = np.random.default_rng(OMNI_P2_SEED)
+perm = rng.permutation(n_dates)
+cutoff = int(round(EXPLORATORY_FRAC * n_dates))
+explor_idx = set(perm[:cutoff].tolist())
+
+partition = np.where(
+    np.isin(np.arange(n_dates), list(explor_idx)),
+    "exploratory", "confirmatory"
+)
+manifest = pd.DataFrame({"game_date": unique_dates, "partition": partition})
+manifest.to_csv(MANIFEST_PATH, index=False)
+
+# --- Diagnostics & hash ------------------------------------------------------
+counts = manifest["partition"].value_counts()
+n_expl = int(counts.get("exploratory", 0))
+n_conf = int(counts.get("confirmatory", 0))
+print(f"Dates exploratory:   {n_expl} ({n_expl/n_dates:.4f})")
+print(f"Dates confirmatory:  {n_conf} ({n_conf/n_dates:.4f})")
+
+year_split = manifest.assign(year=manifest["game_date"].str[:4]) \
+                     .groupby(["year", "partition"]).size().unstack(fill_value=0)
+print("\nPer-year partition counts:")
+print(year_split)
+
+events_with_part = events.merge(manifest, left_on="date", right_on="game_date")
+print("\nEvent-level partition counts:")
+print(events_with_part["partition"].value_counts())
+
+with open(MANIFEST_PATH, "rb") as f:
+    manifest_sha256 = hashlib.sha256(f.read()).hexdigest()
+print(f"\nManifest SHA256 (commit to GitHub as holdout_manifest_v1_0.sha256.txt):")
+print(manifest_sha256)
