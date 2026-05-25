@@ -12,10 +12,7 @@ Append-only project log for the OMNI Paper 2 exploratory phase. Each entry recor
 - **Decision** ∈ {`continue`, `shelve`, `convert-to-registration-candidate`, `n/a`}
 
 Entries are appended in chronological order. Entries are not edited after commitment; corrections are appended as new entries referencing the prior entry's timestamp.
-
----
-
-## YYYY-MM-DDTHH:MM:SSZ — lock-event — Charter v0.3 lock
+YYYY-MM-DDTHH:MM:SSZ  →  2026-05-25T19:30:00Z— lock-event — Charter v0.3 lock
 
 - **Type:** `lock-event`
 - **Entity:** `OMNI_Paper2_Sandbox_Charter_v0_3.docx` (lock candidate after ChatG fourth-pass review)
@@ -25,7 +22,7 @@ Entries are appended in chronological order. Entries are not edited after commit
 
 ---
 
-## YYYY-MM-DDTHH:MM:SSZ — hypothesis — PI azimuth / wave hypothesis (initial)
+YYYY-MM-DDTHH:MM:SSZ  →  2026-05-25T19:30:00Z — hypothesis — PI azimuth / wave hypothesis (initial)
 
 - **Type:** `hypothesis`
 - **Entity:** *G-AZ-frame coverage compression under the PS regime structurally parallels Paper 1's bounded-G-AZ concentration regimes; the harmonic content of the RS smoothed_360 signal may transform — sharpen, simplify, or shift — under that compression. The transformation, if present, is detectable in the G-AZ frame more sensitively than in G-LON or G-RA, and is at maximum risk of artifactual misreading there.*
@@ -35,7 +32,7 @@ Entries are appended in chronological order. Entries are not edited after commit
 
 ---
 
-## YYYY-MM-DDTHH:MM:SSZ — sequencing — Tier 1 operational sequence
+YYYY-MM-DDTHH:MM:SSZ  →  2026-05-25T19:30:00Z — sequencing — Tier 1 operational sequence
 
 - **Type:** `sequencing`
 - **Entity:** Tier 1 step sequence within Charter §4.1.
