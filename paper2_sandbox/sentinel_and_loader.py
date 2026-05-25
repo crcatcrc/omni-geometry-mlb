@@ -49,7 +49,7 @@ def load_exploratory_events(per_event_csv_path, date_col="date"):
 
 
 # Self-test against a known Paper 1 artifact
-SELF_TEST = Path("/content/drive/MyDrive/OMNI_PROJECT/workspace/Asc_x_MO_GLON.csv")
+SELF_TEST = Path("/content/drive/MyDrive/OMNI_PROJECT/workspace/per_event_features/Asc_x_MO_G-LON.csv")
 if SELF_TEST.exists():
     expl = load_exploratory_events(SELF_TEST)
     print(f"Self-test: {len(expl)} exploratory events loaded from {SELF_TEST.name}")
