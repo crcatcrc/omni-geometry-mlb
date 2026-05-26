@@ -43,7 +43,7 @@ OUTPUT_DIR    = SANDBOX_ROOT / "tier1_step2c_outputs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Configuration ----------------------------------------------------------
-FEATURE_PAIR    = "Asc_x_MO"   # Calibration first; change to Asc_x_SU after
+FEATURE_PAIR    = "Asc_x_SU" # Calibration first; change to Asc_x_SU after
 SMOOTH_WINDOWS  = [3, 5]       # Both Paper 1 scales; stability cross-check
 # Arbitrary descriptive threshold for tallying high-gradient degrees.
 # Exploratory only — no inferential weight.
