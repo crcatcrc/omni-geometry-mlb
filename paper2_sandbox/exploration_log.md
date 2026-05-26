@@ -140,3 +140,18 @@ YYYY-MM-DDTHH:MM:SSZ  →  2026-05-25T19:30:00Z — sequencing — Tier 1 operat
 - **Decision:** `n/a` (governance event). Proceeding to Tier 1 Step 2: per-frame occupancy diagnostics, G-AZ priority.
 
 ---
+---
+
+## 2026-05-26T19:00:00Z — sequencing — Step 2b closed; pivot to local conditional-rate framework
+
+- **Type:** `sequencing`
+- **Entity:** Closure of Tier 1 Step 2b (population-level circular-distribution comparison) and pivot of the Tier 1 Step 2 / Step 5 framework to local conditional-rate analysis.
+- **Motivation:** Step 2b was constructed around chi-square / permutation / bootstrap circular two-sample tests answering the question "do HS and LS (or BHW and GHL) occupy globally different angular distributions?" Empirical results on Asc × MO and PI re-grounding established that this is a secondary question for OMNI. The core operational question is local conditional discrimination: under near-identical sky geometry (same-day, same-park games differing by 1–2° in feature value), does the local conditional outcome surface change rapidly enough that small angular shifts correspond to materially different outcome probabilities? Population-level distributional tests do not address this; they answer a different question, and binning-based tests at 10° / 30° resolution are structurally blind to the 1°-scale variation that matters operationally.
+- **Outcome (Step 2b findings retained as established):**
+    1. Asc × MO shows no globally distinguishable HS vs LS or BHW vs GHL distributions in any of G-AZ, G-LON, G-RA frames, in any of all-exploratory / RS / PS strata. All 18 permutation p-values fell between 0.31 and 0.97.
+    2. G-AZ frame has a strong frame-intrinsic axial baseline: axial R̄ ≈ 0.32–0.34 across all outcome × stratum cells. The baseline is shared between HS and LS and between BHW and GHL within ≈ 0.02. This is a horizon-relative geometric effect — celestial bodies linger at East and West azimuths because azimuthal angular velocity is slowest near the horizon and fastest near transit — not an outcome-conditioned signal. Any future G-AZ outcome analysis must subtract or otherwise account for this baseline before claiming an outcome effect.
+    3. The chi-square + bootstrap apparatus exhibits known sparse-bin instability at PS sample sizes (n ≤ 200), producing upward-biased Cramer's V confidence intervals. Permutation p-values remain trustworthy because both observed and permuted statistics share the bias; effect-size estimates do not.
+- **Framework pivot:** The Step 2 architecture is re-centered on Paper 1's lift framework, extended into Paper 2's outcome contrasts (BHW vs GHL alongside HS vs LS) and stratification axis (RS vs PS). Step 2c is the operational continuation. The core instruments are smoothed conditional rates P(outcome | d), lift curves Lift(d) = P(outcome | d) / baseline rate, local gradient dP/dθ as the same-day discrimination metric, and engine-protocol coverage weighting via smoothed_count. Watson U², KDE-based total variation distance, and adaptive-binning chi-square corrections are not adopted; they were off-center for OMNI's operational question.
+- **Decision:** `continue` — Step 2b closed; Step 2c is the immediate next deliverable. No further work on the population-distribution apparatus. Step 2c v1 will be deliberately minimal and directly continuous with the Paper 1 engine.
+
+---
