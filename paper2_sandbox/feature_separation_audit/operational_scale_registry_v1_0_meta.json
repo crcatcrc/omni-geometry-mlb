@@ -1,0 +1,22 @@
+{
+  "registry": "operational_scale_registry",
+  "registry_version": "v1.0",
+  "generated_utc": "2026-05-28T22:26:24Z",
+  "source_master": "/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/tier1_feature_separation_audit_outputs/feature_separation_audit_master.csv",
+  "source_master_sha256": "e5a6bad6c54a5460c25674dd0a9aa61a5c3bd3c6c48c054568829262744ccdd1",
+  "audit_version": "v2.1",
+  "partition": "exploratory_only",
+  "n_features": 241,
+  "class_counts": {
+    "same-slate-discriminator": 157,
+    "marginal": 52,
+    "slow-contextual": 32
+  },
+  "notes": [
+    "Operational classes are PROVISIONAL working labels, not a final taxonomy; thresholds heuristic, not yet linked to lift behaviour or predictive usefulness.",
+    "slow-contextual velocity_robust set to NaN (residual ~1 deg/hr is integer-quantization noise); resolution_mode=between-day-only.",
+    "recommended_resolution_deg = round(near45_sep_median), floored at 1 deg; n/a for between-day-only.",
+    "velocity_robust recomputable from dt_bins: sep_median / (dt_median_min/60) in the 45-90 min bin."
+  ],
+  "registry_sha256": "68319a2ef1ba1556653e7e4094959cd25704482c389fd276c24faaf305c1891a"
+}

@@ -1,0 +1,44 @@
+origin,frame,operational_scale_flag,n_features,near45_median,near45_p90_median,velocity_robust_median,daily_drift_median
+Asc,G-AZ,same-slate-discriminator,15,6.0,20.0,5.0,
+Asc,G-LON,same-slate-discriminator,15,5.0,16.0,5.0,22.05504430142193
+Asc,G-LON,slow-contextual,2,0.0,0.5,1.0,12.096872314395199
+Asc,G-RA,same-slate-discriminator,15,5.0,16.0,5.0,21.710131204920486
+Asc,G-RA,slow-contextual,2,0.0,1.5,1.0,12.118379182311115
+Asc G-AZ,G-AZ_x_G-LON,marginal,1,2.0,7.0,2.0,13.86018332121963
+Asc G-AZ,G-AZ_x_G-RA,marginal,1,2.0,7.0,2.0,13.780763887052444
+Asc G-LON,G-LON_x_G-AZ,marginal,1,3.0,13.0,3.0,13.228924953832916
+Asc G-LON,G-LON_x_G-RA,same-slate-discriminator,1,5.0,16.0,5.0,25.586533549615822
+Asc G-RA,G-RA_x_G-AZ,marginal,1,3.0,13.0,3.0,13.16459916562593
+Asc G-RA,G-RA_x_G-LON,same-slate-discriminator,1,5.0,16.0,5.0,25.70023300847359
+EA,G-AZ,marginal,1,4.0,23.0,4.0,
+EA,G-AZ,same-slate-discriminator,14,6.0,19.0,5.5,
+EA,G-LON,marginal,2,2.5,8.0,2.5,12.632827541301488
+EA,G-LON,same-slate-discriminator,15,5.0,15.0,5.0,23.71321970638473
+EA,G-RA,marginal,2,2.5,8.5,3.0,12.786200740744203
+EA,G-RA,same-slate-discriminator,15,5.0,14.0,5.0,23.51203427208988
+EA G-AZ,G-AZ_x_G-LON,marginal,1,2.0,4.0,1.0,13.428893435292366
+EA G-AZ,G-AZ_x_G-RA,marginal,1,2.0,4.0,1.0,13.333333333333334
+EA G-LON,G-LON_x_G-AZ,marginal,1,3.0,12.0,3.0,13.499698712770927
+EA G-LON,G-LON_x_G-RA,same-slate-discriminator,1,5.0,15.0,5.0,27.244101278070826
+EA G-RA,G-RA_x_G-AZ,marginal,1,3.0,12.0,3.0,13.44293865199728
+EA G-RA,G-RA_x_G-LON,same-slate-discriminator,1,5.0,14.0,5.0,27.34033566562253
+MC,G-LON,marginal,2,2.5,8.5,3.0,12.790677469936238
+MC,G-LON,same-slate-discriminator,15,5.0,15.0,5.0,23.48843233907911
+MC,G-RA,marginal,2,2.5,8.5,3.0,12.786200740744198
+MC,G-RA,same-slate-discriminator,15,5.0,14.0,5.0,23.51203427208988
+MC G-LON,G-LON_x_G-AZ,marginal,1,3.0,12.0,3.0,13.488149952376377
+MC G-LON,G-LON_x_G-RA,same-slate-discriminator,1,5.0,14.0,5.0,27.102168628898298
+MC G-RA,G-RA_x_G-AZ,marginal,1,3.0,12.0,3.0,13.442938651997338
+MC G-RA,G-RA_x_G-LON,same-slate-discriminator,1,5.0,14.0,5.0,27.34033566562252
+ME,G-AZ,marginal,13,3.0,17.0,3.0,
+MO,G-AZ,marginal,14,3.0,17.0,3.0,
+MO,G-LON,slow-contextual,14,0.0,1.0,1.0,12.800003803513121
+MO,G-RA,slow-contextual,14,0.0,1.0,1.0,12.79505960712045
+VX,G-LON,marginal,2,4.0,20.0,3.0,14.949375483319471
+VX,G-LON,same-slate-discriminator,15,6.0,23.0,6.0,21.732568712692107
+VX,G-RA,marginal,2,4.0,21.0,3.5,15.268568352038436
+VX,G-RA,same-slate-discriminator,15,6.0,24.0,6.0,21.66828734119474
+VX G-LON,G-LON_x_G-AZ,marginal,1,3.0,19.0,3.0,14.08544061315169
+VX G-LON,G-LON_x_G-RA,same-slate-discriminator,1,6.0,23.0,6.0,25.830737511894423
+VX G-RA,G-RA_x_G-AZ,marginal,1,3.0,20.0,3.0,14.16591494810084
+VX G-RA,G-RA_x_G-LON,same-slate-discriminator,1,6.0,24.0,5.0,25.97134579664217

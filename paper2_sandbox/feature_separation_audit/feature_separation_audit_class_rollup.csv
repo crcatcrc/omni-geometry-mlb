@@ -1,0 +1,4 @@
+operational_scale_flag,n_features,near45_med,near45_p90_med,velocity_med
+same-slate-discriminator,157,5.0,16.0,5.0
+marginal,52,3.0,16.0,3.0
+slow-contextual,32,0.0,1.0,1.0
