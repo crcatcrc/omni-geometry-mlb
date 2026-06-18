@@ -1,0 +1,16 @@
+check,expected,observed,pass
+Universe A rows,345,345,True
+Universe B rows,423,423,True
+Universe C rows,510,510,True
+Universe A unique feature_id,345,345,True
+Universe B unique feature_id,423,423,True
+Universe C unique feature_id,510,510,True
+A subset B,True,True,True
+B disjoint C,True,True,True
+B plus C characterized universe,933,933,True
+Universe B Tier A,345,345,True
+Universe B Tier B,51,51,True
+Universe B Tier C,27,27,True
+Universe A direct predictive claims,0,0,True
+Universe B direct predictive claims,0,0,True
+Universe C direct predictive claims,0,0,True

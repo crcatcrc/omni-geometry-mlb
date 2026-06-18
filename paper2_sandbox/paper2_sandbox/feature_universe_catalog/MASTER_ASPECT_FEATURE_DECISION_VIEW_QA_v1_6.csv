@@ -1,0 +1,17 @@
+check,expected,observed,pass
+rows_match_input,2494,2494,True
+unique_feature_id,2494,2494,True
+layer_total::has_paper1_data,741,741,True
+layer_total::has_phase1p5_data,6,6,True
+layer_total::has_fsa_data,241,241,True
+layer_total::has_hlon_data,192,192,True
+layer_total::has_step2c_data,209,209,True
+layer_total::has_operating_point_data,209,209,True
+layer_total::has_priority_data,18,18,True
+layer_total::has_phase3c_data,192,192,True
+engine_candidate_pool,423,423,True
+A_rich_clean,102,102,True
+B_partial_clean,91,91,True
+C_light_clean,230,230,True
+representation_development_pool,510,510,True
+paper1_HS_peak_lift_populated,>0,741,True

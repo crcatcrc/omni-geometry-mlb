@@ -1,0 +1,11 @@
+check,expected,observed,pass
+checksum_has_paper1_data,741,741,True
+checksum_has_phase1p5_data,6,6,True
+checksum_has_fsa_data,241,241,True
+checksum_has_hlon_data,192,192,True
+checksum_has_step2c_data,209,209,True
+checksum_has_operating_point_data,209,209,True
+checksum_has_priority_data,18,18,True
+checksum_has_phase3c_data,192,192,True
+metric_columns_present,>0,239,True
+rows_with_any_outcome_pole_fields,>0,933,True

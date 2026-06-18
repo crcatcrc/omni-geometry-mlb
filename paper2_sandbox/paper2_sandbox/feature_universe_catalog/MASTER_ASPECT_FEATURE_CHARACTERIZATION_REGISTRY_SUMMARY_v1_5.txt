@@ -1,0 +1,63 @@
+==========================================================================================
+MASTER ASPECT FEATURE CHARACTERIZATION REGISTRY v1.5 COMPLETE
+==========================================================================================
+Input: /content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_ANALYSIS_REGISTRY_v1_3.csv
+Rows: 2494
+Columns: 710
+
+SCOPE VALUES
+{'in_scope': 2253, 'excluded_h_lon_origin_not_analyzed': 241}
+
+TIER VALUES
+{'Tier A': 787, 'Sparse-coverage': 768, 'Tier B': 356, 'Constrained-motion': 229, 'Tier C': 224, 'Part of Fortune': 54, 'nan': 50, 'Earth/solar-locked': 26}
+
+CHECKSUMS / QA
+                            check expected  observed  pass
+         checksum_has_paper1_data      741       741  True
+       checksum_has_phase1p5_data        6         6  True
+            checksum_has_fsa_data      241       241  True
+           checksum_has_hlon_data      192       192  True
+         checksum_has_step2c_data      209       209  True
+checksum_has_operating_point_data      209       209  True
+       checksum_has_priority_data       18        18  True
+        checksum_has_phase3c_data      192       192  True
+           metric_columns_present       >0       239  True
+rows_with_any_outcome_pole_fields       >0       933  True
+
+CHARACTERIZATION STATUS
+                  table characterization_status  n_features
+characterization_status              unanalyzed        1320
+characterization_status   lightly_characterized         500
+characterization_status   excluded_not_analyzed         241
+characterization_status partially_characterized         224
+characterization_status    richly_characterized         209
+
+COVERAGE VALIDITY CLASS
+                  table                  coverage_validity_class  n_features
+coverage_validity_class           quarantine_or_special_handling         969
+coverage_validity_class                           coverage_clean         727
+coverage_validity_class                     coverage_conditional         272
+coverage_validity_class                    excluded_not_analyzed         241
+coverage_validity_class coverage_clean_or_rotationally_supported         235
+coverage_validity_class                    coverage_unclassified          50
+
+DESCRIPTOR CANDIDATE STATUS
+                      table                  descriptor_candidate_status  n_features
+descriptor_candidate_status                        not_yet_characterized        1320
+descriptor_candidate_status characterized_but_requires_coverage_handling         510
+descriptor_candidate_status         excluded_from_current_analysis_scope         241
+descriptor_candidate_status   lightly_characterized_descriptor_candidate         230
+descriptor_candidate_status      well_characterized_descriptor_candidate         102
+descriptor_candidate_status partially_characterized_descriptor_candidate          91
+
+OUTCOME-POLE FIELD COUNT
+           table  outcome_pole_field_count  n_features
+pole_field_count                         0        1561
+pole_field_count                         2         532
+pole_field_count                         4         401
+
+OUTPUTS
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_CHARACTERIZATION_REGISTRY_v1_5.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_CHARACTERIZATION_REGISTRY_QA_v1_5.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_CHARACTERIZATION_REGISTRY_SUMMARY_v1_5.txt
+==========================================================================================

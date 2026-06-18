@@ -1,0 +1,71 @@
+==========================================================================================
+MASTER ASPECT FEATURE DECISION VIEW v1.6 COMPLETE
+==========================================================================================
+Input: /content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_CHARACTERIZATION_REGISTRY_v1_5.csv
+Input SHA-256: 0c4b05f1ff7fbf212dafaa2310b666b9f962f3b9210daa3ae06c27116d85879e
+Registry build seed: 20260615
+Run timestamp UTC: 2026-06-18T17:05:40Z
+Rows: 2494
+Columns: 77
+
+COLUMN RESOLUTION MAP
+paper1_HS_peak_lift      -> 'paper1_HS_peak_smoothed_lift'
+paper1_LS_peak_lift      -> 'paper1_LS_peak_smoothed_lift'
+paper1_HS_peak_degree    -> 'paper1_HS_peak_degree'
+paper1_LS_peak_degree    -> 'paper1_LS_peak_degree'
+hlon_HS_peak_lift        -> 'hlon_HS_peak_lift'
+hlon_LS_peak_lift        -> 'hlon_LS_peak_lift'
+step2c_HS_peak_lift      -> 'step2c_HS_peak_lift'
+operating_HS_peak_lift   -> 'operating_point_HS_peak_lift'
+fsa_operational_class    -> 'fsa_operational_class_provisional'
+phase3c_origin_class     -> 'phase3c_origin_class'
+
+QA
+                                check expected  observed  pass
+                     rows_match_input     2494      2494  True
+                    unique_feature_id     2494      2494  True
+         layer_total::has_paper1_data      741       741  True
+       layer_total::has_phase1p5_data        6         6  True
+            layer_total::has_fsa_data      241       241  True
+           layer_total::has_hlon_data      192       192  True
+         layer_total::has_step2c_data      209       209  True
+layer_total::has_operating_point_data      209       209  True
+       layer_total::has_priority_data       18        18  True
+        layer_total::has_phase3c_data      192       192  True
+                engine_candidate_pool      423       423  True
+                         A_rich_clean      102       102  True
+                      B_partial_clean       91        91  True
+                        C_light_clean      230       230  True
+      representation_development_pool      510       510  True
+        paper1_HS_peak_lift_populated       >0       741  True
+
+ENGINE CANDIDATE STRENGTH
+                    table engine_candidate_strength  n_features
+engine_candidate_strength                                  2071
+engine_candidate_strength             C_light_clean         230
+engine_candidate_strength              A_rich_clean         102
+engine_candidate_strength           B_partial_clean          91
+
+PRIMARY MODELING TRACK
+                 table                    primary_modeling_track  n_features
+primary_modeling_track                     not_yet_characterized        1320
+primary_modeling_track representation_development_not_first_pass         510
+primary_modeling_track                HS_LS_first_pass_candidate         423
+primary_modeling_track                excluded_not_current_scope         241
+
+REPRESENTATION DEVELOPMENT REASON
+                            table representation_development_reason  n_features
+representation_development_reason                                          1984
+representation_development_reason    quarantine_or_special_handling         414
+representation_development_reason              coverage_conditional          96
+
+MARGIN TRACK STATUS
+              table                 margin_track_status  n_features
+margin_track_status        margin_BHW_GHL_not_available        2093
+margin_track_status margin_BHW_GHL_available_but_paused         401
+
+OUTPUTS
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_DECISION_VIEW_v1_6.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_DECISION_VIEW_QA_v1_6.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_DECISION_VIEW_SUMMARY_v1_6.txt
+==========================================================================================

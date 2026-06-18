@@ -1,0 +1,67 @@
+==========================================================================================
+HS/LS MODELING UNIVERSE MANIFESTS v1.7 COMPLETE
+==========================================================================================
+Input: /content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/MASTER_ASPECT_FEATURE_DECISION_VIEW_v1_6.csv
+Input SHA-256: f54f4976ee179d7fa5416c8165a90f4e28acd617ec3055f9c9fe9636fff21eab
+Run timestamp UTC: 2026-06-18T17:40:56Z
+
+UNIVERSE DEFINITIONS
+A: Tier A only, engine_candidate_pool == True; strict first-pass baseline.
+B: Tier A+B+C, engine_candidate_pool == True; expanded nested increment over A.
+C: representation_development_pool == True; not first-pass model input.
+
+ROWS
+Universe A: 345
+Universe B: 423
+Universe C: 510
+
+QA
+                              check expected observed  pass
+                    Universe A rows      345      345  True
+                    Universe B rows      423      423  True
+                    Universe C rows      510      510  True
+       Universe A unique feature_id      345      345  True
+       Universe B unique feature_id      423      423  True
+       Universe C unique feature_id      510      510  True
+                         A subset B     True     True  True
+                       B disjoint C     True     True  True
+    B plus C characterized universe      933      933  True
+                  Universe B Tier A      345      345  True
+                  Universe B Tier B       51       51  True
+                  Universe B Tier C       27       27  True
+Universe A direct predictive claims        0        0  True
+Universe B direct predictive claims        0        0  True
+Universe C direct predictive claims        0        0  True
+
+UNIVERSE A STRENGTH
+     table engine_candidate_strength  n_features
+A_strength             C_light_clean         170
+A_strength              A_rich_clean          90
+A_strength           B_partial_clean          85
+
+UNIVERSE B STRENGTH
+     table engine_candidate_strength  n_features
+B_strength             C_light_clean         230
+B_strength              A_rich_clean         102
+B_strength           B_partial_clean          91
+
+UNIVERSE B TIER × STRENGTH
+engine_candidate_strength  A_rich_clean  B_partial_clean  C_light_clean  All
+coverage_tier_normalized                                                    
+Tier A                               90               85            170  345
+Tier B                                8                3             40   51
+Tier C                                4                3             20   27
+All                                 102               91            230  423
+
+UNIVERSE C REASON
+   table representation_development_reason  n_features
+C_reason    quarantine_or_special_handling         414
+C_reason              coverage_conditional          96
+
+OUTPUTS
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/HS_LS_UNIVERSE_A_TIER_A_ENGINE_MANIFEST_v1_7.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/HS_LS_UNIVERSE_B_TIER_ABC_ENGINE_MANIFEST_v1_7.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/HS_LS_UNIVERSE_C_REPRESENTATION_DEVELOPMENT_MANIFEST_v1_7.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/HS_LS_MODELING_UNIVERSE_MANIFESTS_QA_v1_7.csv
+/content/drive/MyDrive/OMNI_PROJECT/paper2_sandbox/HS_LS_MODELING_UNIVERSE_MANIFESTS_SUMMARY_v1_7.txt
+==========================================================================================
