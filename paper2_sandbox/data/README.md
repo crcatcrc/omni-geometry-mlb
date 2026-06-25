@@ -25,7 +25,7 @@ Final frozen feature populations.
 
 Primary artifact:
 
-* `PHASE3D_TRACKA_FROZEN_MANIFEST_v_0.csv`
+* `PHASE3D_TRACKA_FROZEN_MANIFEST_v1_0.csv`
 
 ---
 
