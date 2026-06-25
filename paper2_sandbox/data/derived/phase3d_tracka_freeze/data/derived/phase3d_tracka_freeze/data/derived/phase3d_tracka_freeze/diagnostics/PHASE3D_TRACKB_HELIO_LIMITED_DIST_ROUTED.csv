@@ -1,0 +1,5 @@
+feature_id,origin,target_body,target_frame,coverage_validity_class
+Asc G-AZ x JU H-LON,Asc,JU,H-LON,coverage_clean_or_rotationally_supported
+EA G-AZ x JU H-LON,EA,JU,H-LON,coverage_clean_or_rotationally_supported
+Asc G-AZ x SA H-LON,Asc,SA,H-LON,coverage_clean_or_rotationally_supported
+EA G-AZ x SA H-LON,EA,SA,H-LON,coverage_clean_or_rotationally_supported
