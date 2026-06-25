@@ -1,0 +1,89 @@
+feature_id,track,resolution,peak_deg_mean,peak_circ_sd,peak_lift_mean,peak_lift_min,support_min,local_grad_mean,modality,n_prominent_lobes,hs16_prior,prior_shift
+Asc x JN G-AZ,geo,6.0,68.2,26.6,1.1294,1.0987,271,0.023578,multimodal,3,30.0,38.0
+Asc x MA G-AZ,geo,6.0,259.1,15.8,1.1753,1.1582,161,0.041696,multimodal,3,255.0,4.0
+Asc x MO G-AZ,geo,6.0,294.8,0.4,1.179,1.121,247,0.032346,unimodal_stable,3,77.0,142.0
+Asc x PA G-AZ,geo,5.0,23.7,27.2,1.2011,1.1737,231,0.027244,multimodal,3,78.0,54.0
+Asc x VS G-AZ,geo,6.0,267.5,22.0,1.1618,1.1466,187,0.032414,multimodal,3,260.0,7.0
+EA x CE G-AZ,geo,6.0,265.0,58.4,1.1738,1.1234,168,0.024568,multimodal,3,117.0,148.0
+EA x JN G-AZ,geo,6.0,104.9,14.8,1.1355,1.1243,283,0.023077,multimodal,3,93.0,12.0
+EA x MA G-AZ,geo,6.0,317.8,65.6,1.179,1.144,173,0.026116,multimodal,3,283.0,35.0
+EA x MO G-AZ,geo,6.0,71.5,20.9,1.175,1.1411,239,0.024265,multimodal,3,290.0,141.0
+EA x PA G-AZ,geo,6.0,270.8,0.4,1.1761,1.1622,287,0.022172,unimodal_stable,3,92.0,179.0
+EA x VS G-AZ,geo,6.0,294.4,15.0,1.1454,1.1284,188,0.030123,multimodal,3,307.0,13.0
+Asc x CE G-LON,geo,5.0,46.9,15.8,1.169,1.1488,301,0.027065,multimodal,3,54.0,7.0
+Asc x JN G-LON,geo,5.0,235.3,53.2,1.1104,1.0976,379,0.022296,bimodal,2,124.0,111.0
+Asc x MA G-LON,geo,5.0,41.0,49.6,1.1639,1.139,138,0.028994,multimodal,3,93.0,52.0
+Asc x PA G-LON,geo,5.0,352.9,88.9,1.1381,1.1164,325,0.022037,multimodal,3,285.0,68.0
+Asc x VS G-LON,geo,5.0,83.0,11.2,1.149,1.1365,256,0.024966,multimodal,3,96.0,13.0
+EA x MA G-LON,geo,5.0,349.9,53.6,1.1626,1.1411,185,0.032627,multimodal,3,341.0,9.0
+EA x MO G-LON,geo,5.0,230.5,37.8,1.1478,1.1121,360,0.026814,multimodal,3,29.0,158.0
+EA x VS G-LON,geo,5.0,73.3,26.3,1.1396,1.1318,199,0.024635,bimodal,2,45.0,28.0
+MC x CE G-LON,geo,5.0,71.4,29.7,1.1331,1.1218,283,0.021118,multimodal,3,138.0,67.0
+MC x MA G-LON,geo,5.0,85.5,34.4,1.1432,1.1209,144,0.028841,multimodal,3,109.0,23.0
+MC x PA G-LON,geo,5.0,56.0,58.0,1.1836,1.1524,325,0.017401,multimodal,3,156.0,100.0
+MC x VS G-LON,geo,5.0,150.8,41.2,1.1346,1.1187,267,0.023899,multimodal,3,160.0,9.0
+VX x CE G-LON,geo,6.0,143.3,45.8,1.1418,1.1188,365,0.016824,multimodal,3,219.0,76.0
+VX x MA G-LON,geo,6.0,177.6,26.0,1.1744,1.1451,242,0.03121,multimodal,3,135.0,43.0
+VX x MO G-LON,geo,6.0,54.0,10.7,1.1415,1.1174,430,0.023029,multimodal,3,176.0,122.0
+VX x PA G-LON,geo,6.0,93.3,90.7,1.1191,1.1082,366,0.016586,scatter_or_flat,1,62.0,31.0
+VX x VS G-LON,geo,6.0,312.7,58.2,1.1165,1.0995,315,0.019732,multimodal,3,325.0,12.0
+EA G-LON x MO G-RA,geo,5.0,160.4,105.0,1.1479,1.1078,348,0.021751,multimodal,3,28.0,132.0
+MC G-LON x MO G-RA,geo,5.0,287.5,102.4,1.1521,1.1278,348,0.018053,multimodal,3,117.0,171.0
+VX G-LON x MO G-RA,geo,6.0,53.6,10.8,1.1188,1.0952,449,0.018864,bimodal,2,80.0,26.0
+VX G-RA x MO G-LON,geo,6.0,56.7,10.3,1.1413,1.1099,423,0.021458,bimodal,2,354.0,63.0
+Asc x JN G-RA,geo,5.0,298.1,79.6,1.1415,1.1189,304,0.022044,multimodal,3,122.0,176.0
+Asc x MA G-RA,geo,5.0,53.3,58.4,1.1598,1.1311,180,0.032515,multimodal,3,63.0,10.0
+Asc x PA G-RA,geo,5.0,342.3,30.9,1.1676,1.1574,347,0.023483,multimodal,3,87.0,105.0
+EA x CE G-RA,geo,5.0,5.4,62.6,1.1418,1.1247,323,0.020511,multimodal,3,329.0,36.0
+EA x MO G-RA,geo,5.0,213.9,88.2,1.1464,1.1286,353,0.017938,multimodal,3,79.0,135.0
+EA x VS G-RA,geo,5.0,54.8,84.1,1.1301,1.1129,203,0.026848,multimodal,3,323.0,92.0
+MC x CE G-RA,geo,5.0,95.4,62.6,1.1418,1.1247,323,0.020511,multimodal,3,59.0,36.0
+MC x VS G-RA,geo,5.0,144.8,84.1,1.1301,1.1129,203,0.026848,multimodal,3,53.0,92.0
+VX x MA G-RA,geo,6.0,178.6,26.9,1.1771,1.1426,222,0.033964,multimodal,3,169.0,10.0
+VX x PA G-RA,geo,6.0,66.8,81.8,1.131,1.1212,425,0.016733,multimodal,3,219.0,152.0
+Asc x JU G-AZ,geo,6.0,38.0,-0.0,1.1729,1.1513,398,0.022716,unimodal_stable,3,70.0,32.0
+Asc x NN G-AZ,geo,6.0,232.1,67.9,1.1512,1.1146,236,0.026013,multimodal,3,295.0,63.0
+EA x JU G-AZ,geo,6.0,47.0,0.9,1.1629,1.144,371,0.021626,unimodal_stable,3,80.0,33.0
+EA x NN G-AZ,geo,6.0,50.6,71.1,1.1476,1.1219,228,0.021633,multimodal,3,82.0,31.0
+Asc x SA G-AZ,geo,6.0,235.6,1.2,1.2109,1.1783,213,0.027223,unimodal_stable,3,252.0,16.0
+EA x SA G-AZ,geo,6.0,238.0,2.2,1.2202,1.1865,220,0.02276,unimodal_stable,3,261.0,23.0
+Asc G-LON x CE H-LON,helio,9.79,39.5,46.4,1.1121,1.0882,689,0.014356,bimodal,2,,
+Asc G-LON x JN H-LON,helio,9.79,279.6,0.8,1.1241,1.0948,773,0.017373,unimodal_stable,1,,
+Asc G-LON x MA H-LON,helio,9.78,241.6,18.0,1.1004,1.0817,702,0.011706,scatter_or_flat,1,,
+Asc G-LON x PA H-LON,helio,9.79,317.8,49.7,1.0815,1.0608,681,0.012632,scatter_or_flat,0,,
+Asc G-LON x VS H-LON,helio,9.79,129.4,5.9,1.0987,1.0803,796,0.013854,unimodal_stable,1,,
+EA G-LON x CE H-LON,helio,9.2,20.7,67.1,1.089,1.0714,634,0.009738,scatter_or_flat,0,,
+EA G-LON x JN H-LON,helio,9.19,190.0,38.1,1.1137,1.0839,544,0.014006,bimodal,2,,
+EA G-LON x MA H-LON,helio,9.2,233.0,-0.0,1.1077,1.0974,742,0.012496,unimodal_stable,1,,
+EA G-LON x PA H-LON,helio,9.2,342.4,63.2,1.1087,1.0933,731,0.012205,bimodal,2,,
+EA G-LON x VS H-LON,helio,9.19,130.1,13.9,1.0891,1.07,822,0.010323,scatter_or_flat,1,,
+MC G-LON x CE H-LON,helio,9.02,80.5,47.1,1.0983,1.0821,642,0.012074,scatter_or_flat,1,,
+MC G-LON x JN H-LON,helio,9.01,296.2,71.6,1.1065,1.0899,570,0.013213,bimodal,2,,
+MC G-LON x MA H-LON,helio,9.01,327.8,50.7,1.1108,1.0963,729,0.012822,scatter_or_flat,1,,
+MC G-LON x PA H-LON,helio,9.02,72.6,61.9,1.1195,1.0991,722,0.01186,bimodal,2,,
+MC G-LON x VS H-LON,helio,9.01,217.0,14.9,1.0854,1.0749,798,0.009538,scatter_or_flat,0,,
+VX G-LON x CE H-LON,helio,12.29,201.1,69.1,1.082,1.0712,859,0.011264,scatter_or_flat,0,,
+VX G-LON x JN H-LON,helio,12.29,347.4,56.9,1.0723,1.0621,793,0.009962,scatter_or_flat,0,,
+VX G-LON x MA H-LON,helio,12.3,79.3,96.5,1.1171,1.107,919,0.011514,multimodal,3,,
+VX G-LON x PA H-LON,helio,12.29,177.4,56.8,1.0728,1.0567,1047,0.009372,scatter_or_flat,0,,
+VX G-LON x VS H-LON,helio,12.29,303.8,6.8,1.0719,1.0552,1021,0.00795,unimodal_stable,0,,
+Asc G-RA x CE H-LON,helio,9.79,39.0,48.4,1.1066,1.0846,708,0.0108,bimodal,2,,
+Asc G-RA x JN H-LON,helio,9.79,262.5,35.4,1.1162,1.0901,577,0.012923,scatter_or_flat,1,,
+Asc G-RA x MA H-LON,helio,9.77,255.2,24.1,1.0972,1.0817,683,0.010903,scatter_or_flat,0,,
+Asc G-RA x PA H-LON,helio,9.79,325.2,44.8,1.0937,1.0659,746,0.014083,scatter_or_flat,1,,
+Asc G-RA x VS H-LON,helio,9.79,130.4,0.8,1.0971,1.0803,780,0.011877,unimodal_stable,1,,
+EA G-RA x CE H-LON,helio,9.17,350.8,48.4,1.0947,1.073,631,0.01001,scatter_or_flat,1,,
+EA G-RA x JN H-LON,helio,9.17,229.9,38.6,1.111,1.0991,560,0.015182,bimodal,2,,
+EA G-RA x MA H-LON,helio,9.14,231.2,1.6,1.1057,1.0932,737,0.012998,unimodal_stable,1,,
+EA G-RA x PA H-LON,helio,9.17,344.8,60.5,1.115,1.0987,736,0.014454,bimodal,2,,
+EA G-RA x VS H-LON,helio,9.16,128.9,13.3,1.087,1.0803,816,0.009018,scatter_or_flat,0,,
+MC G-RA x CE H-LON,helio,9.17,80.8,48.4,1.0947,1.073,631,0.01001,scatter_or_flat,1,,
+MC G-RA x JN H-LON,helio,9.17,319.9,38.6,1.111,1.0991,560,0.015182,bimodal,2,,
+MC G-RA x MA H-LON,helio,9.14,321.2,1.6,1.1057,1.0932,737,0.012998,unimodal_stable,1,,
+MC G-RA x PA H-LON,helio,9.17,74.8,60.5,1.115,1.0987,736,0.014431,bimodal,2,,
+MC G-RA x VS H-LON,helio,9.16,218.9,13.3,1.087,1.0803,816,0.009018,scatter_or_flat,0,,
+VX G-RA x CE H-LON,helio,12.75,233.1,21.1,1.0872,1.0679,862,0.009579,scatter_or_flat,1,,
+VX G-RA x JN H-LON,helio,12.75,351.2,5.8,1.0715,1.0651,754,0.008379,unimodal_stable,0,,
+VX G-RA x MA H-LON,helio,12.73,53.4,6.5,1.1099,1.1008,956,0.010457,unimodal_stable,3,,
+VX G-RA x PA H-LON,helio,12.75,190.1,63.1,1.0763,1.0606,1069,0.010622,scatter_or_flat,0,,
+VX G-RA x VS H-LON,helio,12.73,304.2,5.6,1.0733,1.0626,1023,0.012368,unimodal_stable,0,,
