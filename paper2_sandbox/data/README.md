@@ -14,6 +14,7 @@ The resulting frozen Track A population consists of:
 * **0 features removed under the adopted dual-resolution scatter rule**
 
 The work documented here established that heliocentric angle-target features belong on essentially equal footing with the geocentric population after matched-resolution characterization.
+Honest leak-free baseline at phase entry: AUC ≈ 0.560 (date-grouped, nested encoding). Track A was constructed to be engineered against this baseline; no predictive improvement is claimed by this phase."
 
 ---
 
